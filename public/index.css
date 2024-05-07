@@ -1,0 +1,145 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.mainBody {
+    max-width: 800px;
+    min-height: 100vh;
+    background-color: aliceblue;
+    margin: 0 auto;
+}
+
+.navContainer {
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+}
+
+.navTitle {
+    display: flex;
+    flex: 1;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+}
+
+.menuContainer {
+    font-size: 1rem;
+    color: white;
+    
+}
+
+.menuContainer a {
+    cursor: pointer;
+    margin-right: 1rem;
+    color: white;
+}
+
+.postCard {
+    width: 96%;
+    max-width: 600px;
+    background-color: rgba(202, 152, 255, 0.465);
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    margin: .5rem auto 0 auto  ;
+    outline: none;
+    /* border: 2px solid rgba(255, 255, 255, 0.208); */
+    box-shadow: 1px 1px 1px rgba(165, 165, 165, 0.812);
+    /* padding: .1rem; */
+}
+
+.postCardImage {
+    width: 40%;
+    height: 120px;
+    object-fit: cover;
+    object-position: top;
+}
+
+
+
+.info {
+    display: flex;
+    flex: 1;
+    min-height: 120px;
+    /* background-color: gold; */
+    display: flex;
+    flex-direction: column;
+}
+
+.infoTitle {
+    display: flex;
+    flex: 1;
+    /* background-color: rgba(255, 255, 255, 0.146); */
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 1rem;
+}
+
+.cardInfo {
+    display: flex;
+    flex-direction: row;
+    /* align-self: flex-end; */
+    background-color: rgba(243, 240, 240, 0.087);
+    justify-content: space-between;
+    align-items: center;
+    font-size: .7rem;
+    padding:  .3rem;
+}
+
+.cardInfoTime {
+    font-size: .6rem;
+    font-style: italic;
+
+}
+
+
+
+/* details */
+
+.detailsContainer {
+    padding-bottom: 3rem;
+}
+
+.detailsContainer h3 {
+    text-align: center;
+}
+
+.detailsInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 .5rem;
+}
+
+.detailsInfo span {
+    font-size: .9rem;
+    font-style: italic;
+}
+
+.detailsFeatureImage {
+    width: 100%;
+    height: 400px;
+}
+
+.detailsImage {
+    width: 100%;
+}
+
+p {
+    padding: .5rem;
+}
+
+

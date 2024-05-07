@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>MM  News</title>
+    <%- include("dymeta") -%>
+
+
+    <link rel="stylesheet" href="/index.css" />
+</head>
+<body>
+    <div class="mainBody">
+        <%- include("nav") -%>
+       
+        <div class="detailsContainer">
+            <img src="<%=locals.data.postHeader.featureImage %>" alt="featureImage" class="detailsFeatureImage" >
+
+            <div class="detailsInfo">
+                <span> <%=locals.data.postHeader.author %> </span>
+                <span> <%=locals.data.postHeader.lastUpdated %> </span>
+            </div>
+            <h3>  <%=locals.data.postHeader.title %>  </h3>
+        
+            <% locals.data.data.map((item) => { %>
+              <img src="<%=item.downloadUrl %>" alt="image" loading="lazy" class="detailsImage" >
+              <p> <%=item.details %> </p>
+            <% }); %>
+        </div>
+    </div>
+</body>
+</html>
