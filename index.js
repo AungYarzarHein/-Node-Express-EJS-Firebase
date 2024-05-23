@@ -1,6 +1,6 @@
 import express from "express";
 import "dotenv/config";
-import { defaultFeatureImage, getCollectionData, getPost } from "./utils/getData.js";
+import { defaultFeatureImage, getCollectionData, getLastPost, getPost } from "./utils/getData.js";
 
 
 
@@ -14,7 +14,7 @@ app.set("view engine","ejs") ;
 
 
 app.get("/",async (req,res) => {
-    const collectionData = await getCollectionData("details",1);
+    const collectionData = await getLastPost("details");
     res.render("index",{header:collectionData[0].postHeader,data:collectionData[0]})
 
 })

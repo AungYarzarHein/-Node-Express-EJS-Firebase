@@ -19,7 +19,7 @@
             <div class="postCard">
                 <img src="<%=item.imageUrl %>" alt="imageUrl" class="postCardImage" loading="lazy" />
                <div class="info">
-                <div class="infoTitle" > <span><%= item.title %> </span></div>
+                <div class="infoTitle" > <span><%= item.title %> <%= item.title %>  </span></div>
     
                 <div class="cardInfo">
                     <span><%= item.author %></span>
@@ -29,6 +29,9 @@
                </div>
            </a>
         <% }); %>
+
+
+       
     </div>
 </body>
 </html>
