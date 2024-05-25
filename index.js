@@ -26,7 +26,7 @@ app.get("/posts",async(req,res) => {
 })
 
 app.get("/contact",async(req,res) => {
-    res.render("contact",{navText:"Contact Us"})
+    res.render("contact",{header:{title:"contact",featureImage:defaultFeatureImage}})
 })
 
 

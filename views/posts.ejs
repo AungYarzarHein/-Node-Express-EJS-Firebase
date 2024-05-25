@@ -14,24 +14,26 @@
         <%- include("nav") -%>
        
 
+       <div class="contentWrapper">
         <% data.map((item) => { %>
-           <a href="/posts/<%=item.postId%>" >  
-            <div class="postCard">
-                <img src="<%=item.imageUrl %>" alt="imageUrl" class="postCardImage" loading="lazy" />
-               <div class="info">
-                <div class="infoTitle" > <span><%= item.title %> <%= item.title %>  </span></div>
-    
-                <div class="cardInfo">
-                    <span><%= item.author %></span>
-                    <span class="cardInfoTime" ><%= item.lastUpdated %></span>
+            <a href="/posts/<%=item.postId%>" >  
+             <div class="postCard">
+                 <img src="<%=item.imageUrl %>" alt="imageUrl" class="postCardImage" loading="lazy" />
+                <div class="info">
+                 <div class="infoTitle" > <span><%= item.title %> <%= item.title %>  </span></div>
+     
+                 <div class="cardInfo">
+                     <span><%= item.author %></span>
+                     <span class="cardInfoTime" ><%= item.lastUpdated %></span>
+                 </div>
                 </div>
-               </div>
-               </div>
-           </a>
-        <% }); %>
+                </div>
+            </a>
+         <% }); %>
+       </div>
 
 
-       
+        <%- include("footer") -%>
     </div>
 </body>
 </html>

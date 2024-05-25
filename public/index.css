@@ -150,6 +150,15 @@ p {
 }
 
 
+.contentWrapper {
+    min-height: 90vh;
+}
+
+.adWrapper {
+    text-align: center;
+}
+
+
 
 /* contact */
 
@@ -159,6 +168,37 @@ p {
     justify-content: center;
     align-items: center;
     padding-top: 5rem;
+}
+
+
+
+.footerContainer {
+    background-color: blueviolet;
+    background: linear-gradient(90deg,rgb(118, 31, 184),blueviolet);
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    align-items: center;
+}
+
+
+
+.footTitle {
+    display: flex;
+    flex: 1;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+}
+
+.thank {
+    width: 100%;
+    background-color: rgb(123, 37, 203);
+    text-align: center;
+    padding-block: 2rem;
+    color: white;
+    font-weight: 700;
 }
 
 
