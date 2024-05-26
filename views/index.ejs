@@ -9,6 +9,10 @@
 
 
     <link rel="stylesheet" href="/index.css" />
+    <!-- <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script> -->
+   
+    
+
 </head>
 <body>
     <div class="mainBody">
@@ -16,6 +20,15 @@
        
         <div class="detailsContainer">
             <img src="<%=locals.data.postHeader.featureImage %>" alt="featureImage" class="detailsFeatureImage" >
+
+            <!-- <div style="display: flex;width: 100%;text-align: center;justify-content: center;align-items: center;" >
+                <script type="text/javascript">
+                    aclib.runBanner({
+                        zoneId: '8403810',
+                    });
+                </script>
+            </div> -->
+            
 
             <div class="detailsInfo">
                 <span> <%=locals.data.postHeader.author %> </span>
@@ -31,5 +44,12 @@
 
         <%- include("footer") -%>
     </div>
+
+    <!-- <script type="text/javascript">
+        aclib.runAutoTag({
+            zoneId: '7bvqgmjflx',
+        });
+    </script> -->
+
 </body>
 </html>

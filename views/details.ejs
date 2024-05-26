@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/index.css" />
 
     <script type='text/javascript' src='//conditioneavesdroppingbarter.com/52/39/17/523917fb534a349eabe8ee5aef29076f.js'></script>
+    <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
 </head>
 <body>
    <div class="mainBody">
@@ -38,17 +39,55 @@
         </script>
         <script type="text/javascript" src="//conditioneavesdroppingbarter.com/9fc4a431d8b609b8ea4b1d36afef2f84/invoke.js"></script>
        </div>
+         
+       <img src="<%=locals.data.data[0].downloadUrl %>" alt="image" loading="lazy" class="detailsImage" >
+       <p> <%=locals.data.data[0].details %> </p>
+
+      
+    
+       <div style="display: flex;width: 100%;text-align: center;justify-content: center;align-items: center;" >
+        <script type="text/javascript">
+            aclib.runBanner({
+                zoneId: '8403810',
+            });
+        </script>
+       </div>
+
+        
     
         <% locals.data.data.map((item) => { %>
           <img src="<%=item.downloadUrl %>" alt="image" loading="lazy" class="detailsImage" >
           <p> <%=item.details %> </p>
         <% }); %>
+
+
+        <div style="display: flex;width: 100%;text-align: center;justify-content: center;align-items: center;" >
+            <script type="text/javascript">
+                aclib.runBanner({
+                    zoneId: '8404982',
+                });
+            </script>
+        </div>
+
+        
     </div>
+
+    
+    
+    
+    
 
     <%- include("footer") -%>
    
    </div>
 
    <script type='text/javascript' src='//conditioneavesdroppingbarter.com/94/04/29/94042922248ff9ab32d1095ece22bada.js'></script>
+
+   <!-- <script type="text/javascript">
+    aclib.runInterstitial({
+        zoneId: '8404802',
+    });
+   </script> -->
+
 </body>
 </html>

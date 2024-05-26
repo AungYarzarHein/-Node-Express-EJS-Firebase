@@ -8,6 +8,7 @@
 
 
     <link rel="stylesheet" href="/index.css" />
+    <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
 </head>
 <body>
     <div class="mainBody">
@@ -15,6 +16,18 @@
        
 
        <div class="contentWrapper">
+
+
+    
+        <div style="display: flex;width: 100%;text-align: center;justify-content: center;align-items: center;" >
+            <script type="text/javascript">
+                aclib.runBanner({
+                    zoneId: '8403810',
+                });
+            </script>
+           </div>
+
+
         <% data.map((item) => { %>
             <a href="/posts/<%=item.postId%>" >  
              <div class="postCard">
@@ -30,10 +43,28 @@
                 </div>
             </a>
          <% }); %>
+
+         <div style="display: flex;width: 100%;text-align: center;justify-content: center;align-items: center;" >
+            <script type="text/javascript">
+                aclib.runBanner({
+                    zoneId: '8404982',
+                });
+            </script>
+        </div>
+        
        </div>
 
 
         <%- include("footer") -%>
     </div>
+
+    <script type="text/javascript">
+        aclib.runInPagePush({
+            zoneId: '8404986',
+            refreshRate: 30,
+            maxAds: 2,
+        });
+    </script>
+    
 </body>
 </html>
