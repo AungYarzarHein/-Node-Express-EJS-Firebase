@@ -2,7 +2,7 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: black;
+    /* background-color: black; */
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
@@ -15,12 +15,12 @@ a {
 .mainBody {
     max-width: 800px;
     min-height: 100vh;
-    background-color: aliceblue;
+    background-color: rgb(254, 254, 254);
     margin: 0 auto;
 }
 
 .navContainer {
-    background-color: blueviolet;
+    background: linear-gradient(120deg,blueviolet,rgb(166, 29, 201));
     display: flex;
     flex-direction: row;
     padding: 1rem;
@@ -34,6 +34,16 @@ a {
     font-weight: 700;
     color: white;
     cursor: pointer;
+}
+
+.title {
+    padding: .5rem;
+    background: linear-gradient(120deg,blueviolet,rgb(166, 29, 201));
+    margin: 0 ;
+    display: block;
+    margin: 0 .2rem;
+    color: #fff;
+    font-weight: 600;
 }
 
 .menuContainer {
@@ -100,7 +110,7 @@ a {
     justify-content: space-between;
     align-items: center;
     font-size: .7rem;
-    padding:  .3rem;
+    padding:  .2rem;
 }
 
 .cardInfoTime {
@@ -115,6 +125,7 @@ a {
 
 .detailsContainer {
     padding-bottom: 3rem;
+    background-color: rgb(255, 255, 255);
 }
 
 .detailsContainer h3 {
@@ -125,11 +136,11 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 .5rem;
+    padding:  .5rem;
 }
 
 .detailsInfo span {
-    font-size: .9rem;
+    font-size: .8rem;
     font-style: italic;
 }
 
@@ -138,6 +149,8 @@ a {
     aspect-ratio: 16/9;
     object-fit: cover;
     object-position: top;
+    background-color: aqua;
+    margin: 0;
     /* height: 400px; */
 }
 
@@ -174,12 +187,13 @@ p {
 
 
 .footerContainer {
-    background-color: blueviolet;
-    background: linear-gradient(90deg,rgb(118, 31, 184),blueviolet);
+    /* background-color: blueviolet; */
+    background: linear-gradient(120deg,blueviolet,rgb(166, 29, 201));
     display: flex;
     flex-direction: row;
     padding: 1rem;
     align-items: center;
+    border-bottom: 1px dotted rgb(255, 255, 255);
 }
 
 
@@ -195,7 +209,7 @@ p {
 
 .thank {
     width: 100%;
-    background-color: rgb(123, 37, 203);
+    background: linear-gradient(120deg,blueviolet,rgb(166, 29, 201));
     text-align: center;
     padding-block: 2rem;
     color: white;

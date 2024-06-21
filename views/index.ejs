@@ -9,7 +9,7 @@
 
 
     <link rel="stylesheet" href="/index.css" />
-    <!-- <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script> -->
+   
    
     
 
@@ -21,20 +21,17 @@
         <div class="detailsContainer">
             <img src="<%=locals.data.postHeader.featureImage %>" alt="featureImage" class="detailsFeatureImage" >
 
-            <!-- <div style="display: flex;width: 100%;text-align: center;justify-content: center;align-items: center;" >
-                <script type="text/javascript">
-                    aclib.runBanner({
-                        zoneId: '8403810',
-                    });
-                </script>
-            </div> -->
             
+            <span class="title" >  <%=locals.data.postHeader.title %>  </span>
 
             <div class="detailsInfo">
                 <span> <%=locals.data.postHeader.author %> </span>
                 <span> <%=locals.data.postHeader.lastUpdated %> </span>
             </div>
-            <h3>  <%=locals.data.postHeader.title %>  </h3>
+
+            <%- include("bannerOne") -%>
+
+           
         
             <% locals.data.data.map((item) => { %>
               <img src="<%=item.downloadUrl %>" alt="image" loading="lazy" class="detailsImage" >
@@ -45,11 +42,7 @@
         <%- include("footer") -%>
     </div>
 
-    <!-- <script type="text/javascript">
-        aclib.runAutoTag({
-            zoneId: '7bvqgmjflx',
-        });
-    </script> -->
+    
 
 </body>
 </html>
